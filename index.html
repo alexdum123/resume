@@ -2,83 +2,99 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AlexDum, Alex, cool">
-  <meta name="keywords" content="здесь вы узнайте кто такой Александр Думанский, и почему он такой классный">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AlexDum, Alex, cool" />
+  <meta name="keywords"
+    content="здесь вы узнайте кто такой Александр Думанский, и почему он такой классный(сам не похвалишь - никто не похвалит)))))))))))))))))))" />
+  <link rel="stylesheet" href="style.css" />
   <title>AlexDum</title>
 </head>
 
 <body>
-  <h1> Александр Думанский </h1>
-  <img src="jojo.webp" width="120" alt="wonder of u">
-  <p><a href="https://vk.com/idj09kgeh96h34">vk</a></p>
-  <p>
-    Я бывший <strong>тик токер</strong> (<em>самое популярное видео набрало 3м просмотра</em>), до популярности
-    поставилс себе цель, стать <strong>популярным тик токером</strong> и в течении <strong></strong>2-ух месяцев
-    справился.</strong> После обретения славы решил покончить с тик током, и заняться чем то другим. На данный момент
-    работаем над этим проектом
-  </p>
-  <hr />
-  <h2>Мои хоби</h2>
-  <ol>
-    <li>Треножерный зал</li>
-    <li>UI/UX дизайн</li>
-    <li>Компьтерные игры</li>
-    <li>Несмешно шутить</li>
-    <li>Много кушать)</li>
-  </ol>
-  <hr />
-  <h2>Игровые звания</h2>
-  <table width="300">
-    <thead>
-      <tr>
-        <th>Название игры</th>
-        <th>Игровое звание</th>
-        <th>Время игры</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Clach of clans</td>
-        <td>Титан 3</td>
-        <td>8 лет</td>
-      </tr>
-      <tr>
-        <td>StarCraft 2 </td>
-        <td>Серебро 2</td>
-        <td>1 год</td>
-      </tr>
-      <tr>
-        <td>Heartstone</td>
-        <td>Легенда</td>
-        <td>5 лет</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <h1>Связаться со мной </h1>
-  <form>
-    <div>
-      <label for="text">Имя</label>
-      <input type="text" id="text" placeholder="Введите имя">
+  <div class="container">
+    <!-- класс -->
+    <div class="info card bg-red">
+      <!-- фото -->
+      <img src="jojo.webp" class="avatar" alt="wonder of u" />
+      <div class="txt">
+        <h1>Александр Думанский</h1>
+        <p><a href="https://vk.com/idj09kgeh96h34">Мой Вк</a></p>
+
+        <p>
+          Я бывший <strong>тик токер</strong> (<em>самое популярное видео набрало 3м просмотра</em>), до популярности
+          поставил себе цель, стать
+          <strong>популярным тик токером</strong> и в течении
+          <strong>2-ух месяцев </strong>справился. После обретения славы решил
+          покончить с тик током, и заняться чем то другим. На данный момент
+          работаем над этим проектом
+        </p>
+      </div>
     </div>
-    <div>
-      <label for="email">Почта</label>
-      <input type="email" id="email" placeholder="Введите почту">
+    <!-- список -->
+    <div class="hobby card bg-blue">
+      <h2>Мои хобби</h2>
+      <ol>
+        <li>Тренажерный зал</li>
+        <li>Веб дизайн</li>
+        <li>Компьтерные игры</li>
+        <li>Несмешно шутить</li>
+        <li>Много кушать)</li>
+      </ol>
     </div>
-    <div>
-      <label for="message">Введите сообщение</label>
-      <br>
-      <textarea placeholder="Ваше сообщение"></textarea>
+    <!-- табличка -->
+    <div class="game card bg-purple">
+      <h2>Игровые звания</h2>
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>Название игры</th>
+            <th>Игровое звание</th>
+            <th>Время игры</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clach of clans</td>
+            <td>Титан 3</td>
+            <td>8 лет</td>
+          </tr>
+          <tr>
+            <td>StarCraft 2</td>
+            <td>Серебро 2</td>
+            <td>1 год</td>
+          </tr>
+          <tr>
+            <td>Heartstone</td>
+            <td>Легенда</td>
+            <td>5 лет</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div>
-      <button class="favorite styled" type="button">
-        Отправить!
-      </button>
-    </div>
-  </form>
+    <!-- сообщение -->
+    <form class="card bg-green">
+      <div class="mail">
+        <h2>Связаться со мной</h2>
+        <div class="gmail">
+          <label for="text">Имя</label>
+          <input type="text" id="text" placeholder="Введите имя" />
+        </div>
+        <div class="gmail">
+          <label for="email">Почта</label>
+          <input type="email" id="email" placeholder="Введите почту" />
+        </div>
+      </div>
+      <div class="gmail">
+        <label for="message">Введите сообщение</label>
+        <textarea placeholder="Ваше сообщение"></textarea>
+      </div class="gmail">
+      <button class="click_me btn" type="button" onclick="this.className='clicked btn'"></button>
+    </form>
+    <img src="18c1e7bec326beea1eba0badb180801e.jpg" class="rek" alt="реклама" />
+    <a href="https://pm.by/ru/casino/slots"><img src="free-png.ru-38-340x340.png" class="x" alt="реклама" /></a>
+  </div>
 </body>
 
 </html>
